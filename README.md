@@ -46,6 +46,7 @@ Create angularJs factories for basketService, storageService and confiServide (=
 Do something with your new basket inside your controller (== `custom-sofa\app\scripts\controllers\main.js`)
 Don't forget to import your scipts inside `custom-sofa\app\index.html` and show something in `custom-sofa\app\views\main.html`
 
+![screenshot](/screenshot.jpg?raw=true "screenshot")
 
 ## Bug
 There is something wrong with the dependency installation of sofa-checkout-service. When adding the import for sofa-q-service, it selects the wrong path. You need to change that line in `index.html` into:
