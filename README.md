@@ -5,7 +5,7 @@ The following shows you how to set up the whole project, without cloning this sa
 If you just clone it, you don't need the following steps
 
 ## Set up the project
-Make sure you installed node ( http://nodejs.org/download/), bower, grunt, yeoman and the angular creator global on your system
+Make sure you installed node (`http://nodejs.org/download/`), bower, grunt, yeoman and the angular creator global on your system
 If not, open commandline as administrator (windows) or use sudo (linux):
 ```
 $ npm install -g bower grunt grunt-cli yo generator-angular
@@ -42,17 +42,19 @@ You may have to select the right version of sofa-core. Simply choose the newest 
 The basics are installed, now you can start coding. 
 
 ## Project content
-Create angularJs factories for basketService, storageService and confiServide (<==> custom-sofa\app\scripts\factory.js)
-Do something with your new basket inside your controller (<==> custom-sofa\app\scripts\controllers\main.js)
-Don't forget to import your scipts inside custom-sofa\app\index.html and show something in custom-sofa\app\views\main.html
+Create angularJs factories for basketService, storageService and confiServide (== `custom-sofa\app\scripts\factory.js`)
+Do something with your new basket inside your controller (== `custom-sofa\app\scripts\controllers\main.js`)
+Don't forget to import your scipts inside `custom-sofa\app\index.html` and show something in `custom-sofa\app\views\main.html`
 
 
 ## Bug
-There is something wrong with the dependency installation of sofa-checkout-service. When adding the import for sofa-q-service, it selects the wrong path. You need to change that line in index.html into:
+There is something wrong with the dependency installation of sofa-checkout-service. When adding the import for sofa-q-service, it selects the wrong path. You need to change that line in `index.html` into:
+```
 <script src="bower_components/sofa-q-service/dist/sofa.qService.js"></script>
+```
 
 ## ToDo
-We don't use the product object an controller for simplicity. That's why we have to edit the file <projectPath>\custom-sofa\bower_components\sofa-basket-service\dist\sofa.BasketService.js 
+We don't use the product object an controller for simplicity. That's why we have to edit the file `<projectPath>\custom-sofa\bower_components\sofa-basket-service\dist\sofa.BasketService.js` 
 Remove lines 100 till 102 (comment them)
 ```javascript
 if (product.isOutOfStock()) {
@@ -60,3 +62,6 @@ if (product.isOutOfStock()) {
 }
 ```
 Else you'll get an error and the addToCart method wont work.
+
+### You can help
+If you've found a bug, a bugfix or something other helpfull, message me: `knitzie0815@gmail.com`
