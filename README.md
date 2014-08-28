@@ -47,11 +47,13 @@ Create angularJs factories for basketService, storageService and confiServide (=
 Do something with your new basket inside your controller (== `custom-sofa\app\scripts\controllers\main.js`)
 Don't forget to import your scipts inside `custom-sofa\app\index.html` and show something in `custom-sofa\app\views\main.html`
 
-![screenshot](/screenshot.jpg?raw=true "screenshot")
+![screenshot version 1.0](/screenshot_v100.jpg?raw=true "screenshot version 1.0")
 
 ## Release v2.0
 In this release I added some features like the angularJS snap tool and angular broadcast. I like to separate that into 
 another version than the basic project for beginners. If there will be more features, I'll place them in this version.
+
+![screenshot version 2.0](/screenshot_v200.jpg?raw=true "screenshot version 2.0")
 
 ## You can help
 If you've found a bug, a bugfix or something other helpfull, message me: `knitzie0815@gmail.com`
