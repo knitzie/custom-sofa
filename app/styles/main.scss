@@ -70,9 +70,6 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
   /* Remove the padding we set earlier */
   .header,
@@ -89,4 +86,23 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.container {
+  width: 80%;
+ }
+
+.grid-sizer { width: 25%; }
+.gutter-sizer { width: 3%; }
+
+.item {
+  width:  20%;
+  height: 200px;
+  float:left;
+  margin-bottom: 3%;
+}
+
+.snap-content {
+  background-color: #fff;
+  border-left: 1px solid #ccc;
 }

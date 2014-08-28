@@ -9,9 +9,11 @@
  * Main module of the application.
  */
 angular
-    .module('customSofaApp', [
-      'ngAnimate',
-      'ngCookies',
-      'ngSanitize',
-      'ngTouch'
-    ]);
+        .module('customSofaApp', [
+            'ngAnimate',
+            'ngCookies',
+            'ngSanitize',
+            'ngTouch',
+            'ui.router',
+            'snap'
+        ]);
