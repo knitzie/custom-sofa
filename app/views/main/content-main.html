@@ -1,0 +1,31 @@
+
+<div snap-drawers="">
+    <div ng-include="'views/main/snap-drawers.html'" ng-controller="SnapCtrl"></div>
+</div>
+
+<div snap-content="" class="snap-content">
+    <div class="wrapper-main-content">
+
+
+        <div class="container">
+            <div ng-include="'views/main/content-header.html'"></div>
+
+            <div>
+                <h1>A very simple CouchCommerce Sofa basket example</h1>
+                <ul>
+                    <li class="item" ng-repeat="product in products">
+                        <p>{{product.name}} - <span class="price-tag">{{product.price| currency}}</span></p>
+                        <a ng-click="goToProductPage(product)">
+                            <img hover-image="{{product.images}}" height="140px" width="140px" src="{{product.images[0].url}}">
+                            <!--<div hover-image="{{product.images}}" style="height:140px;width:140px;">&nbsp;</div>-->
+                        </a>
+                        <p><a ng-click="addToBasket(product)" style="font-weight:bold;">Add to basket</a> |
+                            <a ng-click="removeFromBasket(product)" style="font-weight:bold;">Remove from basket</a></p>
+                    </li>
+                </ul>
+            </div>
+
+            <div ng-include="'views/main/content-footer.html'"></div>
+        </div>
+    </div>
+</div>
