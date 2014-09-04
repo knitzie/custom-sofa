@@ -1,0 +1,14 @@
+<h1>{{selectedProduct.name}}</h1>
+<div class="float-left">
+    <p class="product-desc">
+        {{selectedProduct.description}}
+    </p>
+</div>
+<div class="float-left image-wrapper">
+    <img height="720px" width="600px" ng-src="{{selectedImage.url}}">
+</div>
+<div class="float-clear">
+    <p>
+        <a ng-click="goHome()"><span>Home</span></a>
+    </p>
+</div>
