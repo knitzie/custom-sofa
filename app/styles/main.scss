@@ -106,3 +106,25 @@ body {
   background-color: #fff;
   border-left: 1px solid #ccc;
 }
+
+.float-left {float: left;}
+.float-right {float: right;}
+.float-clear {clear: both;}
+
+.product-desc {max-width: 500px;}
+
+a {cursor: pointer;}
+
+a span
+{
+    color: white;
+    font-weight: bold;
+    background-color: #428bca;
+    padding: 5px 10px;
+}
+
+.price-tag
+{
+    color: #E0931E;
+    font-weight: bold;
+}

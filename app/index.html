@@ -20,37 +20,11 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+            <!-- The ng-view only works with $routeProvider in app.js config -->
+             <div ui-view></div>
 
-    <div snap-drawers="">
-        <div ng-include="'views/snap-drawers.html'" ng-controller="SnapCtrl"></div>
-    </div>
-
-    <div snap-content="" class="snap-content">
-        <div class="wrapper-main-content">
-
-
-            <!-- Add your site or application content here -->
-<!--<div ng-controller="ControllerA">
-        ControllerA.X = {{x}}<br/>
-        <a ng-click="incrementDataInService()">incrementDataInService</a><br>
-    </div>
-    <hr/>
-    <div ng-controller="ControllerB">
-        ControllerB.X = {{x}}<br/>
-        <a ng-click="incrementDataInService()">incrementDataInService</a><br>
-     </div>-->
-
-
-            <div class="container">
-
-              <div ng-include="'views/content-header.html'"></div>
-
-              <div ng-include="'views/content-main.html'" ng-controller="MainCtrl"></div>
-
-              <div ng-include="'views/content-footer.html'"></div>
-
-            </div>
-
+            <!-- We are not using the routeProvider -->
+            <!--<div ng-include="'views/main/content-main.html'" ng-controller="MainCtrl"></div>-->
 
             <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
             <script>
@@ -74,6 +48,7 @@
             <!-- bower:js -->
             <script src="bower_components/jquery/dist/jquery.js"></script>
             <script src="bower_components/angular/angular.js"></script>
+            <script src="bower_components/angular-mocks/angular-mocks.js"></script>
             <script src="bower_components/json3/lib/json3.js"></script>
             <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
             <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
@@ -91,6 +66,10 @@
             <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
             <script src="bower_components/angular-animate/angular-animate.js"></script>
             <script src="bower_components/angular-touch/angular-touch.js"></script>
+            <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+            <script src="bower_components/snapjs/snap.js"></script>
+            <script src="bower_components/angular-snap/angular-snap.js"></script>
+            <script src="bower_components/angular-route/angular-route.js"></script>
             <script src="bower_components/sofa-core/dist/sofa.core.js"></script>
             <script src="bower_components/sofa-q-service/dist/sofa.qService.js"></script>
             <script src="bower_components/sofa-http-service/dist/sofa.httpService.js"></script>
@@ -98,21 +77,20 @@
             <script src="bower_components/sofa-storages/dist/sofa.storages.js"></script>
             <script src="bower_components/sofa-basket-service/dist/sofa.basketService.js"></script>
             <script src="bower_components/sofa-checkout-service/dist/sofa.checkoutService.js"></script>
-            <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-            <script src="bower_components/snapjs/snap.js"></script>
-            <script src="bower_components/angular-snap/angular-snap.js"></script>
+            <script src="bower_components/sofa-url-construction-service/dist/sofa.urlConstructionService.js"></script>
+            <script src="bower_components/sofa-tracking/dist/sofa.tracking.js"></script>
             <!-- endbower -->
             <!-- endbuild -->
 
                 <!-- build:js({.tmp,app}) scripts/scripts.js -->
                 <script src="scripts/app.js"></script>
+                <script src="scripts/controllers/checkout.js"></script>
                 <script src="scripts/controllers/main.js"></script>
                 <script src="scripts/controllers/snap.js"></script>
+                <script src="scripts/controllers/product.js"></script>
                 <script src="scripts/factory.js"></script>
                 <script src="scripts/service.js"></script>
+                <script src="scripts/directive.js"></script>
                 <!-- endbuild -->
-
-            </div>
-        </div>
     </body>
 </html>
